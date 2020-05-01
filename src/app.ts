@@ -3,7 +3,7 @@ const config: GameConfig = {
   title: "Lari Lari Anak",
   width: 800,
   height: 600,
-  parent: "game"
+  parent: "game",
   backgroundColor: "#18216D"
 };
 export class LarilarianakGame extends Phaser.Game {
