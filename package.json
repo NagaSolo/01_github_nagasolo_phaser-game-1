@@ -1,0 +1,11 @@
+{
+  "name": "larilarianak",
+  "version": "0.1.0",
+  "description": "a game to demonstrate phaser + nodejs using github action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SeramaMas",
+  "license": "MIT"
+}
