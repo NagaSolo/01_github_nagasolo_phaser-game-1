@@ -9,7 +9,7 @@ https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-wi
 Create docker container action:
 https://help.github.com/en/actions/building-actions/creating-a-docker-container-action#creating-an-action-metadata-file
 
-build simple game tut:
+build simple game tutorial:
 https://www.freecodecamp.org/news/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135/
 
 # Workflow
@@ -17,6 +17,24 @@ https://www.freecodecamp.org/news/how-to-build-a-simple-game-in-the-browser-with
 ## First phase:
 - repo followed: https://github.com/mariyadavydova/starfall-phaser3-typescript
 - accompanied steps: https://www.freecodecamp.org/news/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135/
+
+## First phase in summary:
+- setup project structure:
+    `npm init`
+- setup the following dev deps packages
+    `npm install -D typescript webpack webpack-cli ts-loader phaser live-server`
+- add `webpack.config.js`, functions as runner to ts compiler, collect js files into a minified one
+- add `tsconfig.json` to define which ts compiler we are using
+- add ts definition file for phaser into src, definitions file is available at `phaser/types`
+- update `scripts` of `package.json` section on what `webpack` should do
+
+- create a minimalistic `html` file as container to the game
+- create `src/app.ts` to put game logic
+
+continue at `making the stars fall` section of tutorial for in detail coding explanation:
+https://www.freecodecamp.org/news/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135/
+
+
 
 ## Adjustment:
 - assets/ - new assets
