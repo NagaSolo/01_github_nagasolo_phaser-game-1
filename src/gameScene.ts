@@ -5,7 +5,7 @@ export class GameScene extends Phaser.Scene {
   lastStarTime: number;
   starsCaught: number;
   starsFallen: number;
-  sand: Phaser.Physics.Arcade.StaticGroup;
+  stone: Phaser.Physics.Arcade.StaticGroup;
   info: Phaser.GameObjects.Text;
 
   constructor() {
