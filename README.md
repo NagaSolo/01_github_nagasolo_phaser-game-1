@@ -1,4 +1,4 @@
-# 01_github_nagasolo_phaser-game-1
+# 01_phaser-game-1
 first attempt at phaser by following tuts here
 
 project conception at 1st May 2020
