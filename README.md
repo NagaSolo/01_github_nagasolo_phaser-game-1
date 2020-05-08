@@ -11,3 +11,8 @@ https://help.github.com/en/actions/building-actions/creating-a-docker-container-
 
 build simple game tut:
 https://www.freecodecamp.org/news/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135/
+
+# Workflow
+## First phase:
+- repo followed: https://github.com/mariyadavydova/starfall-phaser3-typescript
+- accompanied steps: https://www.freecodecamp.org/news/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135/
