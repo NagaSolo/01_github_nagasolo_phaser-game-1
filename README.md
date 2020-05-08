@@ -13,6 +13,19 @@ build simple game tut:
 https://www.freecodecamp.org/news/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135/
 
 # Workflow
+
 ## First phase:
 - repo followed: https://github.com/mariyadavydova/starfall-phaser3-typescript
 - accompanied steps: https://www.freecodecamp.org/news/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135/
+
+## Adjustment:
+- assets/ - new assets
+- gameScene.ts - modify according to assets
+
+## Build
+- configure necessary packages:
+    `npm install -D typescript webpack webpack-cli ts-loader phaser live-server`
+- run webpack:
+    `npm run-script build`
+- start the server:
+    `npm start`
