@@ -22,20 +22,19 @@ export class GameScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.setBaseURL("https://raw.githubusercontent.com/mariyadavydova/" +
-      "starfall-phaser3-typescript/master/");
-    this.load.image("star", "assets/star.png");
-    this.load.image("sand", "assets/sand.jpg");
+    this.load.image("kid", "assets/hat-kid.png");
+    this.load.image("stone", "assets/stone-block.png");
+    this.load.image("star", "assets/rainbow-star.png");
   }
 
   create(): void {
-    this.sand = this.physics.add.staticGroup({
-      key: 'sand',
+    this.stone = this.physics.add.staticGroup({
+      key: 'stone',
       frameQuantity: 20
     });
-    Phaser.Actions.PlaceOnLine(this.sand.getChildren(),
+    Phaser.Actions.PlaceOnLine(this.stone.getChildren(),
       new Phaser.Geom.Line(20, 580, 820, 580));
-    this.sand.refresh();
+    this.stone.refresh();
 
     this.info = this.add.text(10, 10, '',
       { font: '24px Arial Bold', fill: '#FBFBAC' });
@@ -90,6 +89,6 @@ export class GameScene extends Phaser.Scene {
     star.setInteractive();
 
     star.on('pointerdown', this.onClick(star), this);
-    this.physics.add.collider(star, this.sand, this.onFall(star), null, this);
+    this.physics.add.collider(star, this.stone, this.onFall(star), null, this);
   }
 };
